@@ -23,6 +23,7 @@ docker run -d \
     -e DOCKER_GROUP_ID=`id -g` \
     -v `pwd`:/workdir \
     -v `dirname $HOME`:/home_host \
+    --cap-add=SYS_PTRACE \
     dclong/lubuntu-pyside2
 ```
 The following command (only works on Linux) does the same as the above one 
@@ -40,6 +41,7 @@ docker run -d \
     -e DOCKER_GROUP_ID=`id -g` \
     -v `pwd`:/workdir \
     -v `dirname $HOME`:/home_host \
+    --cap-add=SYS_PTRACE \
     dclong/lubuntu-pyside2
 ```
 A default user `dclong` with password `dclong` is used if not specified when running the docker image.
