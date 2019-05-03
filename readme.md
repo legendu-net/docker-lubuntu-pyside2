@@ -42,12 +42,16 @@ docker run -d \
     -v `dirname $HOME`:/home_host \
     dclong/lubuntu-pyside2
 ```
+A default user `dclong` with password `dclong` is used if not specified when running the docker image.
+
+## Remote Connection to Desktop in the Container
+
+Please refer to the section 
+[Remote Connect to Desktop in the Container](http://www.legendu.net/en/blog/my-docker-images/#remote-connect-to-desktop-in-the-container)
+of the post [My Docker Images](http://www.legendu.net/en/blog/my-docker-images/) 
+for detailed instruction on how to use the desktop environment in the Docker image.
 
 ## [Detailed Information](http://www.legendu.net/en/blog/my-docker-images/#list-of-images-and-detailed-information) 
-
-## [Use the JupyterHub Server](http://www.legendu.net/en/blog/my-docker-images/#use-the-jupyterhub-server)
-
-## [Add a New User to the JupyterHub Server](http://www.legendu.net/en/blog/my-docker-images/#add-a-new-user-to-the-jupyterhub-server)
 
 ## [Known Issues](http://www.legendu.net/en/blog/my-docker-images/#known-issues)
 
