@@ -8,6 +8,6 @@ RUN apt-get update -y \
     && apt-get autoremove \
     && apt-get autoclean 
 
-RUN pip3 install pyside2
+RUN pip3 install pyside2 pyqt5
 
 ENTRYPOINT ["/scripts/sys/init.sh"]
